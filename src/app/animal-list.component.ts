@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 
 @Component ({
@@ -17,6 +17,7 @@ import { Animal } from './animal.model';
           <li>Likes: {{animal.likes}}</li>
           <li>Dislikes: {{animal.dislikes}}</li>
         </ul>
+        <button (click)="editButton(animal)">Edit</button>
       </div>
     </div>
   `
@@ -24,4 +25,9 @@ import { Animal } from './animal.model';
 
 export class AnimalComponent {
   @Input() childAnimalList: Animal[];
+  @Output() clickSender = new EventEmitter();
+
+  editButton(animalEdit: Animal) {
+    this.clickSender.emit(animalEdit);
+  }
 }
