@@ -1,27 +1,71 @@
-# Zootopia
+# At the Zoo
+### An application designed for zookeepers to keep track of information on their animals.
+### **By Tyler Bussanich**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+## Description
 
-## Development server
+This is a website designed to assist zookeepers on keeping track of information about the animals in their zoo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The user will be able to view a list of each animal that has been logged.
 
-## Code scaffolding
+They will be able to view and edit information for each animal. For example:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| :------------- | :------------- |
+| Species:       | Tiger          |
+| Name:          | Frankie        |
+| Age:           | 8              |
+| Diet:          | Carnivore      |
+| Location:      | Tiger Kingdom  |
+| Caretakers:    | 8              |
+| Sex:           | Female         |
+| Likes:         | Pasta          |
+| Dislikes:      | Grey's Anatomy |
 
-## Build
+The user will also have the option to view only young animals or only old animals.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+For example, if the user clicks on the 'View Young' button, only animals under two years of age will appear. 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup/Installation
 
-## Running end-to-end tests
+Open the terminal on your computer.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Navigate to your desktop.
 
-## Further help
+Enter "git clone https://github.com/tbssnch/at-the-zoo.git"
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Enter atom . (or whichever text editor you prefer)
+
+In the dist file, open index.html in the browser of your choice.
+
+
+## Support
+
+Contact Tyler at tbussanich@gmail.com
+
+## Technologies Used
+
+HTML, JavaScript, ES6, JSON, NPM, CSS, and Angular.
+
+
+## License
+
+**Copyright (c) Tyler Bussanich**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
