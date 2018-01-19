@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   template: `
       <div class="container">
         <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-        <edit-animal [childSelectedAnimal]="selectedAnimal"></edit-animal>
+        <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
       </div>
   `,
   styleUrls: ['./app.component.css']
@@ -25,5 +25,9 @@ export class AppComponent {
 
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
+  }
+
+  doneButton() {
+    this.selectedAnimal = null;
   }
 }
