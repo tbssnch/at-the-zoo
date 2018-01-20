@@ -5,6 +5,7 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
       <div class="container">
+        <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
         <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
         <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
       </div>
@@ -29,5 +30,9 @@ export class AppComponent {
 
   doneButton() {
     this.selectedAnimal = null;
+  }
+
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
   }
 }
