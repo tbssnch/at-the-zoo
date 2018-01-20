@@ -32,7 +32,7 @@ export class AddAnimalComponent {
   @Output() newAnimalSender = new EventEmitter();
 
   addAnimal(species, name, age, diet, location, caretakers, sex, likes, dislikes) {
-    let newAnimal: Animal = new Animal(species, name, age, diet, location, caretakers, sex, likes, dislikes);
+    let newAnimal: Animal = new Animal(species, name, parseInt(age), diet, location, caretakers, sex, likes, dislikes);
     this.newAnimalSender.emit(newAnimal);
   }
 }
