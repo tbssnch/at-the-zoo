@@ -6,16 +6,18 @@ import { Animal } from './animal.model';
   template: `
       <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed" rel="stylesheet">
       <div class="container">
+      <img src="assets/elephant-head.svg">
         <h1>AT THE ZOO</h1>
-        <img src="./../img/elephant-head.svg" alt="icon">
-        <div class="add-form">
-          <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
-        </div>
         <div class="animal-list">
           <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
         </div>
-        <div class="edit-form">
-          <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
+        <div class="form-container">
+          <div class="add-form">
+          <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
+          </div>
+          <div class="edit-form">
+            <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
+          </div>
         </div>
       </div>
   `,
