@@ -4,10 +4,19 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed" rel="stylesheet">
       <div class="container">
-        <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
-        <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-        <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
+        <h1>AT THE ZOO</h1>
+        <img src="./../img/elephant-head.svg" alt="icon">
+        <div class="add-form">
+          <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
+        </div>
+        <div class="animal-list">
+          <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+        </div>
+        <div class="edit-form">
+          <edit-animal [childSelectedAnimal]="selectedAnimal" (clickSender)="doneButton($event)"></edit-animal>
+        </div>
       </div>
   `,
   styleUrls: ['./app.component.css']

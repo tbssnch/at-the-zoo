@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #FCFCFC;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #136F63;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.animal-list ul {
+  list-style: none;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}

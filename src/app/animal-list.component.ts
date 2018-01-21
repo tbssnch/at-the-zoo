@@ -4,6 +4,7 @@ import { Animal } from './animal.model';
 @Component ({
   selector: 'animal-list',
   template: `
+    <label>View: </label>
     <select (change)="onChange($event.target.value)">
       <option value="all">All</option>
       <option value="young">Young</option>
